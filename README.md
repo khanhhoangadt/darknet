@@ -1,13 +1,16 @@
 Detection darknet, yolo: car, bus, motobike, bike, truck, traffic light
 Using: Cuda 10, CUDNN 7.4
+
 Visual Studio 2017
-run video and export file: 
+
+1. run video and export file: 
 darknet.exe detector demo data/coco.data cfg/yolov3.cfg yolov3.weights 1.MOV -out_filename result.avi
-run after train
+
+2. run after train
 darknet.exe detector demo data/obj.data cfg/yolov3-tiny-obj.cfg yolov3-tiny-obj_last.weights 1.mp4 -out_filename result1.avi
-run photo:
+3. run photo:
 darknet.exe detect cfg/yolov3.cfg yolov3.weights *image path*
-run webcam and export file
+4. run webcam and export file
 darknet.exe detector demo cfg/coco.data cfg/yolov3.cfg yolov3.weights
 tren darknet 
 
